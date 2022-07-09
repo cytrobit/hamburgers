@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #141414;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 40px;
+  height: 32px;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+}
+
+span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.spn1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0% 0%;
+}
+
+.spn2 {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.spn3 {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  transform-origin: 0% 100%;
+}
+
+.spn1-trnsfrm {
+  transform: rotate(45deg);
+}
+
+.spn2-trnsfrm {
+  width: 0;
+  /*    opacity: 0;*/
+}
+
+.spn3-trnsfrm {
+  transform: rotate(-45deg);
+}
+
+.wrapper1 {
+  width: 40px;
+  height: 32px;
+  position: relative;
+  transform: rotate(0);
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper1:hover {
+  cursor: pointer;
+}
+
+.wrap-anim {
+  transform: rotate(180deg);
+}
+
+.spn4 {
+  background-color: darkorange;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out 0.3s;
+}
+
+.spn5 {
+  background-color: darkorange;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.spn6 {
+  background-color: darkorange;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  transform-origin: 0% 100%;
+  transition: 0.3s ease-in-out 0.3s;
+}
+
+.spn4-trnsfrm {
+  transform: translate(4px, 14px) rotateZ(-45deg);
+}
+
+.spn5-trnsfrm {
+  opacity: 0;
+}
+
+.spn6-trnsfrm {
+  transform: translate(8px, -28px) rotateZ(45deg);
+}
+
+.wrapper2 {
+  width: 40px;
+  height: 32px;
+  position: relative;
+  transform: rotate(0);
+  transition: 0.2s ease-in-out;
+}
+
+.wrapper2-transform {
+  transform: rotate(45deg);
+}
+
+.wrapper2:hover {
+  cursor: pointer;
+}
+
+.spn7 {
+  background-color: #14ff00;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateZ(0);
+  transition: 0.3s ease-in-out;
+}
+
+.spn8 {
+  background-color: #14ff00;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  transition: 0.3s ease-in-out 0.3s;
+}
+
+.spn9 {
+  background-color: #14ff00;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  transition: 0.3s ease-in-out 0.2s;
+}
+
+.spn7-trnsfrm {
+  transform: rotateZ(90deg) translateX(14px);
+}
+
+.spn8-trnsfrm {
+  transform: rotateZ(180deg);
+}
+
+.spn9-trnsfrm {
+  transform: rotateZ(-90deg) translateX(14px);
+}
+
+.wrapper3 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 4px;
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s ease-in-out 0.2s;
+}
+
+.wrapper3-transfrm {
+  border: 4px solid #ff00f5;
+  top: 0;
+}
+
+.wrapper3:hover {
+  cursor: pointer;
+}
+
+.spn10 {
+  background-color: #ff00f5;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out 0.2s;
+}
+
+.spn11 {
+  background-color: #ff00f5;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.spn12 {
+  background-color: #ff00f5;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  transition: 0.3s ease-in-out 0.2s;
+}
+
+.spn10-trnsfrm {
+  transform: rotate(45deg);
+  top: calc(50% - 2px);
+}
+
+.spn11-trnsfrm {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+.spn12-trnsfrm {
+  transform: rotate(-45deg);
+  top: calc(50% - 2px);
+  bottom: 0;
+}
+
